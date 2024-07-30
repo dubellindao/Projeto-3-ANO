@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexão</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/flexao.css')}}">
+    <script></script>
+</head>
+<body>
+    <nav>
+        <div>
+            <ul>
+                <div id="menu">
+                    <li><a href=""><img src="{{url_for('static', filename='img/menu-aberto 1.png')}}" alt="menu" id="barrinhas"></a></li>
+                    <li><a href=""><p>Menu</p></a></li>
+                </div>
+                <div id="titulo"> 
+                    <li><a href="{{url_for('menu')}}"><img src="{{url_for('static', filename='img/haltere 1.png')}}" alt="logo" id="alter"></a></li>
+                    <li><a href="{{url_for('menu')}}"><h1>Bem-Estar Muscular</h1></a></li>
+                </div>
+                <div id="entrar">
+                    <li><a href="{{url_for('tela_login')}}"><img src="{{url_for('static', filename='img/continue.png')}}" alt="continue" id="seta"></a></li>
+                    <li><a href="{{url_for('tela_login')}}"><p>Login/Entrar</p></a></li>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    
+    <main>
+        <h1>Flexão de braço</h1>
+
+        <div>
+            <div class="execucao">
+                <h2>Execução</h2>
+                <p>Mantendo o corpo reto no plano, baixe o corpo até o chão dobrando os braços. Empurre o corpo para cima até que os braços estejam estendidos. Repita o processo respeitando seus limites.</p>
+            </div>
+            <img src="{{url_for('static', filename='img/be838f17664e41f57571e803ee5b30e8.gif')}}" alt="mulher executando uma Flexão" id="mulher">
+        </div>
+
+
+        <!-- aplicar o espaço -->
+        <div>
+            <div class="execucao">
+                <h2>Músculos</h2>
+                <h3>Músculos Alvo</h3>
+                <ul>
+                    <li>Peitoral Maior</li>
+                </ul>
+                <h3>Músculos Sinergistas</h3>
+                <ul>
+                    <li>Peitoral Maior</li>
+                    <li>Deltóide Anterior</li>
+                    <li>Tríceps Braquial</li>
+                </ul>
+            </div>
+            <img src="{{url_for('static', filename='img/homem_flexao.gif')}}" alt="homem_flexao" class="imgs">
+        </div>
+
+        <div class="execucao">
+            <h3>Dificuldade</h3>
+            <ul>
+                <li>Moderada</li>
+            </ul>
+        </div>
+
+        <div class="execucao">
+            <h3>Ressalvas</h3>
+            <p>A parte superior e inferior do corpo devem ser mantidas retas durante toda a execução do movimento praticado.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <p>©2023-2100Bem-estarMuscular.net LLC</p>
+            <div>
+                <input type="submit" value="">
+                <input type="submit" value="">
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <script></script>
+</head>
+<body>
+    <nav>
+        <div>
+            <ul>
+                <div id="menu">
+                    <li><a href=""><img src="{{url_for('static', filename='img/menu-aberto 1.png')}}" alt="menu" id="barrinhas"></a></li>
+                    <li><a href=""><p>Menu</p></a></li>
+                </div>
+                <div id="titulo"> 
+                    <li><a href="{{url_for('menu')}}"><img src="{{url_for('static', filename='img/haltere 1.png')}}" alt="logo" id="alter"></a></li>
+                    <li><a href="{{url_for('menu')}}"><h1>Bem-Estar Muscular</h1></a></li>
+                </div>
+                <div id="entrar">
+                    <li><a href="{{url_for('tela_login')}}"><img src="{{url_for('static', filename='img/continue.png')}}" alt="continue" id="seta"></a></li>
+                    <li><a href="{{url_for('tela_login')}}"><p>Login/Entrar</p></a></li>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <div>
+                <a href="{{url_for('ficha')}}"><input type="submit" value="Prepare sua própia
+ficha de treino"></a>
+                <div>
+                    <ul>
+                        <div>
+                            <li><a href="{{url_for('biceps')}}"><img src="{{url_for('static', filename='img/bodybuilder-training-arm-with-resistance-band 1.png')}}" alt="treino de bíceps" class="imgs1"></a></li>
+                            <div id="biceps">Treino de biceps</div>
+                        </div>
+                        <div>
+                            <li><a href="{{url_for('abdomem')}}"><img src="{{url_for('static', filename='img/trabalhando-no-abdomen-na-esteira-de-exercicios 1.png')}}" alt="treino de abdomem" class="imgs1"></a></li>
+                            <div id="abdomem">Treino de abdômem</div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="parte2">
+            <div>
+                <div class="grupo1">
+                    <div>
+                        <img src="{{url_for('static', filename='img/trabalhando-no-abdomen-na-esteira-de-exercicios 1 (6).png')}}" alt="treino de biceps" class="imgs2">
+                        <a href="{{url_for('peito')}}"><input type="submit" value="Treino de
+Peito"></a>
+                    </div>
+                    <div>
+                        <img src="{{url_for('static', filename='img/trabalhando-no-abdomen-na-esteira-de-exercicios 1 (4).png')}}" alt="treino de costas" class="imgs2">
+                        <a href="{{url_for('costas')}}"><input type="submit" value="Treino de
+Costas"></a>
+                    </div>
+                </div>
+
+                <div class="grupo1">
+                    <div>
+                        <img src="{{url_for('static', filename='img/trabalhando-no-abdomen-na-esteira-de-exercicios 1 (3).png')}}" alt="ficha de treino" class="imgs2">
+                        <a href=""><input type="submit" value="Veja as suas
+fichas de
+treino"></a>
+                    </div>
+                    <div>
+                        <img src="{{url_for('static', filename='img/trabalhando-no-abdomen-na-esteira-de-exercicios 1 (5).png')}}" alt="teino de perna" class="imgs2">
+                        <a href="{{url_for('pernas')}}"><input type="submit" value="Treino de
+Pernas"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <p>©2023-2100Bem-estarMuscular.net LLC</p>
+            <div>
+                <input type="submit" value="">
+                <input type="submit" value="">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

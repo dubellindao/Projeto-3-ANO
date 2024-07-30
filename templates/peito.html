@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peito</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/peito.css')}}">
+</head>
+<body>
+    <nav>
+        <div>
+            <ul>
+                <div id="menu">
+                    <li><a href=""><img src="{{url_for('static', filename='img/menu-aberto 1.png')}}" alt="menu" id="barrinhas"></a></li>
+                    <li><a href=""><p>Menu</p></a></li>
+                </div>
+                <div id="titulo"> 
+                    <li><a href="{{url_for('menu')}}"><img src="{{url_for('static', filename='img/haltere 1.png')}}" alt="logo" id="alter"></a></li>
+                    <li><a href="{{url_for('menu')}}"><h1>Bem-Estar Muscular</h1></a></li>
+                </div>
+                <div id="entrar">
+                    <li><a href="{{url_for('tela_login')}}"><img src="{{url_for('static', filename='img/continue.png')}}" alt="continue" id="seta"></a></li>
+                    <li><a href="{{url_for('tela_login')}}"><p>Login/Entrar</p></a></li>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <div>
+                <div>
+                    <h1>Peito</h1>
+                    <p>A principal função do peitoral maior é a adução e a rotação medial (interna) do braço na articulação do ombro. Agindo independentemente, a parte clavicular ajuda a fletir e estender o braço até 90°, enquanto a parte esternocostal facilita a extensão do braço fletido ao puxá-lo para baixo.A principal função do peitoral maior é a adução e a rotação medial (interna) do braço na articulação do ombro.</p>
+                </div>
+                <img src="{{url_for('static', filename='img/image 9.png')}}" alt="Peito">
+            </div>
+        </section>
+        <section>
+            <h2>Treinos</h2>
+            <div class="treinos">
+                <a href=""><h3>Supino Inclinado</h3></a>
+                <img src="{{url_for('static', filename='img/image 10.png')}}" alt="Supino Inclinado" id="img1">
+            </div>
+            <div class="treinos">
+                <a href="{{url_for('flexao')}}"><h3>Flexão de braço</h3></a>
+                <img src="{{url_for('static', filename='img/image 11.1.png')}}" alt="Flexão de braço" id="img2">
+            </div>
+            <div class="treinos">
+                <a href=""><h3>Crucifixo reto na máquina</h3></a>
+                <img src="{{url_for('static', filename='img/image 12.1.png')}}" alt="Crucifixo reto na máquina" id="img3" >
+            </div>
+        </section>    
+    </main>
+    <footer>
+        <div>
+            <p>©2023-2100Bem-estarMuscular.net LLC</p>
+            <div>
+                <input type="submit" value="">
+                <input type="submit" value="">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

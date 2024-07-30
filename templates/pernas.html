@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pernas</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/pernas.css')}}">
+</head>
+<body>
+    <nav>
+        <div>
+            <ul>
+                <div id="menu">
+                    <li><a href=""><img src="{{url_for('static', filename='img/menu-aberto 1.png')}}" alt="menu" id="barrinhas"></a></li>
+                    <li><a href=""><p>Menu</p></a></li>
+                </div>
+                <div id="titulo"> 
+                    <li><a href="{{url_for('menu')}}"><img src="{{url_for('static', filename='img/haltere 1.png')}}" alt="logo" id="alter"></a></li>
+                    <li><a href="{{url_for('menu')}}"><h1>Bem-Estar Muscular</h1></a></li>
+                </div>
+                <div id="entrar">
+                    <li><a href="{{url_for('tela_login')}}"><img src="{{url_for('static', filename='img/continue.png')}}" alt="continue" id="seta"></a></li>
+                    <li><a href="{{url_for('tela_login')}}"><p>Login/Entrar</p></a></li>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <div>
+                <div>
+                    <h1>Pernas</h1>
+                    <p>Os músculos da perna desempenham um papel fundamental na mobilidade e estabilidade do corpo. O quadríceps femoral estende o joelho, os isquiotibiais flexionam o joelho e estabilizam a pelve, enquanto os músculos da panturrilha (gastrocnêmio e sóleo) são responsáveis pela flexão plantar do tornozelo.</p>
+                </div>
+                <img src="{{url_for('static', filename='img/image 15.2.png')}}" alt="costas">
+            </div>
+        </section>
+        <section>
+            <h2>Treinos</h2>
+            <div class="treinos">
+                <a href=""><h3>Leg Press</h3></a>
+                <img src="{{url_for('static', filename='img/image 7.png')}}" alt="Leg Press" id="img1">
+            </div>
+            <div class="treinos">
+                <a href=""><h3>Stiff</h3></a>
+                <img src="{{url_for('static', filename='img/image 16.png')}}" alt="Stiff" id="img2">
+            </div>
+            <div class="treinos">
+                <a href=""><h3>Agachamento livre</h3></a>
+                <img src="{{url_for('static', filename='img/image 17.png')}}" alt="Agachamento livre" id="im3" >
+            </div>
+        </section>    
+    </main>
+    <footer>
+        <div>
+            <p>©2023-2100Bem-estarMuscular.net LLC</p>
+            <div>
+                <input type="submit" value="">
+                <input type="submit" value="">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

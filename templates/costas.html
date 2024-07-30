@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costas</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/costas.css')}}">
+</head>
+<body>
+    <nav>
+        <div>
+            <ul>
+                <div id="menu">
+                    <li><a href=""><img src="{{url_for('static', filename='img/menu-aberto 1.png')}}" alt="menu" id="barrinhas"></a></li>
+                    <li><a href=""><p>Menu</p></a></li>
+                </div>
+                <div id="titulo"> 
+                    <li><a href="{{url_for('menu')}}"><img src="{{url_for('static', filename='img/haltere 1.png')}}" alt="logo" id="alter"></a></li>
+                    <li><a href="{{url_for('menu')}}"><h1>Bem-Estar Muscular</h1></a></li>
+                </div>
+                <div id="entrar">
+                    <li><a href="{{url_for('tela_login')}}"><img src="{{url_for('static', filename='img/continue.png')}}" alt="continue" id="seta"></a></li>
+                    <li><a href="{{url_for('tela_login')}}"><p>Login/Entrar</p></a></li>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <div>
+                <div>
+                    <h1>Costas/Dorsal</h1>
+                    <p>Os músculos das costas são essenciais para a sustentação do nosso corpo. Podemos considerar como sendo uma estrutura vital para nosso organismo, pois suportam a cabeça e o tronco. Além disso, essa musculatura é usada para as mais variadas atividades do dia a dia. Existem três principais músculos das costas: o trapézio, o grande dorsal e o rombóide.</p>
+                </div>
+                <img src="{{url_for('static', filename='img/image 11.png')}}" alt="costas">
+            </div>
+        </section>
+        <section>
+            <h2>Treinos</h2>
+            <div class="treinos">
+                <a href=""><h3>Pulley com pegada pronada</h3></a>
+                <img src="{{url_for('static', filename='img/image 6.png')}}" alt="Pulley com pegada pronada" id="img1">
+            </div>
+            <div class="treinos">
+                <a href=""><h3>Barra fixa</h3></a>
+                <img src="{{url_for('static', filename='img/image 12.png')}}" alt="Barra fixa" id="img2">
+            </div>
+            <div class="treinos">
+                <a href=""><h3>Remada serrote unilateral</h3></a>
+                <img src="{{url_for('static', filename='img/image 13,1.png')}}" alt="Remada serrote unilateral" id="im3" >
+            </div>
+        </section>    
+    </main>
+    <footer>
+        <div>
+            <p>©2023-2100Bem-estarMuscular.net LLC</p>
+            <div>
+                <input type="submit" value="">
+                <input type="submit" value="">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

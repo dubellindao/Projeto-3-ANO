@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de Treino</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/ficha.css')}}">
+</head>
+<body>
+
+    <form action="#" method="post">
+
+        <h2>Ficha de Treino</h2>
+
+        <label for="segunda">Segunda-feira:</label>
+        <input type="text" id="segunda" name="Segunda" placeholder="Ex: Peito, ombros e tríceps" value = "{{dias['Segunda']}}">
+
+        <label for="terca">Terça-feira:</label>
+        <input type="text" id="terca" name="Terça" placeholder="Ex: Costas, ombros e bíceps" value = "{{dias['Terça']}}">
+
+        <label for="quarta">Quarta-feira:</label>
+        <input type="text" id="quarta" name="Quarta" placeholder="Ex: Quadríceps e panturrilhas" value = "{{dias['Quarta']}}">
+
+        <label for="quinta">Quinta-feira:</label>
+        <input type="text" id="quinta" name="Quinta" placeholder="Ex: Descanso" value = "{{dias['Quinta']}}">
+
+        <label for="sexta">Sexta-feira:</label>
+        <input type="text" id="sexta" name="Sexta" placeholder="Ex: Peito, ombros e tríceps" value = "{{dias['Sexta']}}">
+
+        <label for="sabado">Sábado:</label>
+        <input type="text" id="sabado" name="Sábado" placeholder="Ex: Costas, ombros e bíceps" value = "{{dias['Sábado']}}">
+
+        <label for="domingo">Domingo:</label>
+        <input type="text" id="domingo" name="Domingo" placeholder="Ex: Posterior de coxa e panturrilhas" value = "{{dias['Domingo']}}">
+
+        <button type="submit">Salvar</button>
+
+    </form>
+
+</body>
+</html>

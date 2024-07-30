@@ -1,0 +1,197 @@
+ul{
+    list-style: none;
+}
+
+nav div ul{
+    margin-top: -0.7%;
+    margin-left: -0.7%;
+    padding-right: 2%;
+    width: 97%;
+    height: 98%;
+    background: #04D432;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+div ul{
+    display: flex;
+}
+
+div a p{
+    padding-left:15%;
+}
+
+#menu{
+    display: flex;
+}
+#titulo{
+    display:flex;
+    padding-left: 40%;
+
+}
+#titulo a{
+    text-decoration: none;
+}
+
+#titulo h1{
+    font-size: 1.25rem;
+    padding-left: 1%;
+    padding-bottom: -2%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    white-space: nowrap;
+    overflow: hidden;
+    color:black;
+}
+
+#alter{
+    padding-top: 10%;
+    margin-left: -5%;
+    width: 3.125rem;
+    height: 3.125rem;
+}
+
+#barrinhas{
+    padding-top: 55%;
+    width: 1.375rem;
+    height: 1.375rem;
+}
+
+#entrar{
+    display: flex;
+    padding-left: 27%;
+}
+
+#seta{
+    padding-top: 55%;
+    width: 1.375rem;
+    height: 1.375rem;
+}
+section a{
+    text-decoration: none;
+    color: #04D432;
+    font-family: Inter;
+    font-size: x-large;
+    margin-left: 5%;
+    
+}
+
+
+main div{
+    margin-left: 1%;
+    display: flex;
+}
+
+main div div{
+    flex-direction: column;
+    text-align:justify;
+}
+
+h1{
+    color: #04D432;
+    font-family: Inter;
+    font-style: normal;
+    line-height: normal;
+}
+
+main div img{
+    width: 40%;
+    margin-left: 2%;
+}
+
+main div div p{
+    font-size: x-large;
+}
+
+h2{
+    color: #04D432;
+    font-family: Inter;
+    font-size: 2.188rem;
+    font-style: normal;
+    margin-left: 5%;
+
+}
+
+.treinos{
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.treinos img {
+    width: 25%;
+    height: 30%;
+}
+
+#img1{
+    margin-left: 36%;
+}
+
+#img2{
+    margin-left: 37%;
+}
+
+#img3{
+    margin-left: 27%;
+}
+
+footer{
+    background-color: #7B7474;
+    margin-top: 5%;
+}
+footer div p{
+    color: #FFF;
+    text-align: left;
+    margin-left: 2%;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-right: 65%;
+}
+
+footer div{
+    display: flex;
+}
+
+footer div input{
+    width: 1.875rem;
+    height: 2.5rem;
+    padding-left: 50%;
+    margin-left: 30%;
+    margin-top: 10%;
+    margin-bottom: 1%;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #menu, #titulo, #entrar {
+        margin-bottom: 0.625rem;
+    }
+
+    #barrinhas, #alter, #seta {
+        width: 1.875rem;
+    }
+
+    #titulo h1 {
+        font-size: 1.5rem;
+    }
+
+    main section div div p{
+        font-size: 100%;
+    }
+
+    main section h3{
+        font-size: 100%;
+    }
+
+    footer div{
+        flex-direction: column;
+        max-width: 10%;
+    }
+}

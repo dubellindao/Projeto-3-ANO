@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bíceps</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/biceps.css')}}">
+</head>
+<body>
+    <nav>
+        <div>
+            <ul>
+                <div id="menu">
+                    <li><a href=""><img src="{{url_for('static', filename='img/menu-aberto 1.png')}}" alt="menu" id="barrinhas"></a></li>
+                    <li><a href=""><p>Menu</p></a></li>
+                </div>
+                <div id="titulo"> 
+                    <li><a href="{{url_for('menu')}}"><img src="{{url_for('static', filename='img/haltere 1.png')}}" alt="logo" id="alter"></a></li>
+                    <li><a href="{{url_for('menu')}}"><h1>Bem-Estar Muscular</h1></a></li>
+                </div>
+                <div id="entrar">
+                    <li><a href="{{url_for('tela_login')}}"><img src="{{url_for('static', filename='img/continue.png')}}" alt="continue" id="seta"></a></li>
+                    <li><a href="{{url_for('tela_login')}}"><p>Login/Entrar</p></a></li>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <div>
+                <div>
+                    <h1>Bíceps</h1>
+                    <p>O bíceps é um músculo de duas articulações que atua no ombro e no cotovelo. A sua função é realizar a flexão e a supinação do antebraço, e a flexão e a rotação do braço. O bíceps é inervado pelo nervo musculocutâneo e vascularizado pela artéria braquial. A sua cabeça longa também ajuda a estabilizar a articulação do ombro.</p>
+                </div>
+                <img src="{{url_for('static', filename='img/image 13.png')}}" alt="biceps">
+            </div>
+        </section>
+        <section>
+            <h2>Treinos</h2>
+            <div class="treinos">
+                <a href=""><h3>Rosca Direta</h3></a>
+                <img src="{{url_for('static', filename='img/image 2.png')}}" alt="Rosca Direta" id="img1">
+            </div>
+            <div class="treinos">
+                <a href=""><h3 >Rosca Concentrada</h3></a>
+                <img src="{{url_for('static', filename='img/image 14.png')}}" alt="Rosca concentrada" id="img2">
+            </div>
+            <div class="treinos">
+                <a href=""><h3>Bíceps corda polia baixa</h3></a>
+                <img src="{{url_for('static', filename='img/image 15.png')}}" alt="Bíceps corda polia baixa" id="im3" >
+            </div>
+        </section>    
+    </main>
+    <footer>
+        <div>
+            <p>©2023-2100Bem-estarMuscular.net LLC</p>
+            <div>
+                <input type="submit" value="">
+                <input type="submit" value="">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

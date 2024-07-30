@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdomem</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/abdomem.css')}}">
+</head>
+<body>
+    <nav>
+        <div>
+            <ul>
+                <div id="menu">
+                    <li><a href=""><img src="{{url_for('static', filename='img/menu-aberto 1.png')}}" alt="menu" id="barrinhas"></a></li>
+                    <li><a href=""><p>Menu</p></a></li>
+                </div>
+                <div id="titulo"> 
+                    <li><a href="{{url_for('menu')}}"><img src="{{url_for('static', filename='img/haltere 1.png')}}" alt="logo" id="alter"></a></li>
+                    <li><a href="{{url_for('menu')}}"><h1>Bem-Estar Muscular</h1></a></li>
+                </div>
+                <div id="entrar">
+                    <li><a href="{{url_for('tela_login')}}"><img src="{{url_for('static', filename='img/continue.png')}}" alt="continue" id="seta"></a></li>
+                    <li><a href="{{url_for('tela_login')}}"><p>Login/Entrar</p></a></li>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <div>
+                <div>
+                    <h1>Abdômen</h1>
+                    <p>O abdômen tem a função de proteger os órgãos internos contra choques mecânicos. Nos vertebrados, é formado pelo estômago, aparelho excretor, intestino e órgãos reprodutores. Nos seres humanos, o abdômen apresenta, na parte externa, um conjunto de músculos que garantem a proteção dos órgãos internos.</p>
+                </div>
+                <img src="{{url_for('static', filename='img/image 14.1.png')}}" alt="abdomem">
+            </div>
+        </section>
+        <section>
+            <h2>Treinos</h2>
+            <div class="treinos">
+                <a href=""><h3>Abdominal Boxeador</h3></a>
+                <img src="{{url_for('static', filename='img/image 4.png')}}" alt="Abdominal Boxeador" id="img1">
+            </div>
+            <div class="treinos">
+                <a href=""><h3>Abdominal Simples</h3></a>
+                <img src="{{url_for('static', filename='img/image 5.png')}}" alt="Abdominal Simples" id="img2">
+            </div>
+            <div class="treinos">
+                <a href=""><h3>Abdominal com os Pés Elevados</h3></a>
+                <img src="{{url_for('static', filename='img/image 15.1.png')}}" alt="Abdominal com os Pés Elevados" id="img3" >
+            </div>
+        </section>    
+    </main>
+    <footer>
+        <div>
+            <p>©2023-2100Bem-estarMuscular.net LLC</p>
+            <div>
+                <input type="submit" value="">
+                <input type="submit" value="">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
